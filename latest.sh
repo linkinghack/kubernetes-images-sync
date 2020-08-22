@@ -1,3 +1,3 @@
 #!/bin/bash
 
-source versions/v1.17.11.sh
+source versions/v1.19.0-rc.4.sh
