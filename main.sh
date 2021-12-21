@@ -74,3 +74,7 @@ docker push linkinghack/knative-webhook:9f3c83d;
 docker pull gcr.io/knative-releases/knative.dev/serving/cmd/queue@sha256:48a1753de35ecbe060611aea9e95751e3e4851183c4373e65aa1b9410ea6e263;
 docker tag gcr.io/knative-releases/knative.dev/serving/cmd/queue@sha256:48a1753de35ecbe060611aea9e95751e3e4851183c4373e65aa1b9410ea6e263 linkinghack/knative-queue:48a1753;
 docker push linkinghack/knative-queue:48a1753;
+
+docker pull gcr.io/knative-releases/knative.dev/serving/cmd/default-domain@sha256:f04cd06536e321f8f564ac193919a68e4908d0a709090a94f60333125119e946;
+docker tag gcr.io/knative-releases/knative.dev/serving/cmd/default-domain@sha256:f04cd06536e321f8f564ac193919a68e4908d0a709090a94f60333125119e946 linkinghack/knative-default-domain:f04cd06;
+docker push linkinghack/knative-default-domain:f04cd06;
