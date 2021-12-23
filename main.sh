@@ -30,7 +30,7 @@ docker pull gcr.io/knative-releases/knative.dev/operator/cmd/operator@sha256:70c
 docker tag gcr.io/knative-releases/knative.dev/operator/cmd/operator@sha256:70ca57b2beefa81144d8c01943b07d918ab381b7a64429e8d4b16cc377052675 linkinghack/knative-operator:70ca57b;
 docker push linkinghack/knative-operator:70ca57b;
 
-## Knative components
+## Knative Serving components
 docker pull gcr.io/knative-releases/knative.dev/serving/cmd/activator@sha256:ba1485ded12049525afb9856c2fa10d613dbc2b2da90556116bf257f2128eaae;
 docker tag gcr.io/knative-releases/knative.dev/serving/cmd/activator@sha256:ba1485ded12049525afb9856c2fa10d613dbc2b2da90556116bf257f2128eaae linkinghack/knative-activator:ba1485;
 docker push linkinghack/knative-activator:ba1485;
@@ -78,3 +78,20 @@ docker push linkinghack/knative-queue:48a1753;
 docker pull gcr.io/knative-releases/knative.dev/serving/cmd/default-domain@sha256:f04cd06536e321f8f564ac193919a68e4908d0a709090a94f60333125119e946;
 docker tag gcr.io/knative-releases/knative.dev/serving/cmd/default-domain@sha256:f04cd06536e321f8f564ac193919a68e4908d0a709090a94f60333125119e946 linkinghack/knative-default-domain:f04cd06;
 docker push linkinghack/knative-default-domain:f04cd06;
+
+### Knative Evnenting Components
+docker pull gcr.io/knative-releases/knative.dev/eventing/cmd/controller@sha256:14e565af0a741a0e34b139d9661555189972af8d53e837305f711a3f9025e188;
+docker tag gcr.io/knative-releases/knative.dev/eventing/cmd/controller@sha256:14e565af0a741a0e34b139d9661555189972af8d53e837305f711a3f9025e188 linkinghack/knative-eventing-controller:14e565a;
+docker push linkinghack/knative-eventing-controller:14e565a;
+
+docker pull gcr.io/knative-releases/knative.dev/eventing/cmd/apiserver_receive_adapter@sha256:afb65789e9c92414ef8885bb71ec1afd7dffe1730729a45fbf918356bd6ed7a1;
+docker tag gcr.io/knative-releases/knative.dev/eventing/cmd/apiserver_receive_adapter@sha256:afb65789e9c92414ef8885bb71ec1afd7dffe1730729a45fbf918356bd6ed7a1 linkinghack/knative-eventing-apiserver_receive_adapter:afb6578;
+docker push linkinghack/knative-eventing-apiserver_receive_adapter:afb6578;
+
+docker pull gcr.io/knative-releases/knative.dev/eventing/cmd/mtping@sha256:6a78d2df8eec44bb983ae39952097670fad0556afc6d069fc88fd8347a014698;
+docker tag gcr.io/knative-releases/knative.dev/eventing/cmd/mtping@sha256:6a78d2df8eec44bb983ae39952097670fad0556afc6d069fc88fd8347a014698 linkinghack/knative-eventing-mtping:6a78d2d;
+docker push linkinghack/knative-eventing-mtping:6a78d2d;
+
+docker pull gcr.io/knative-releases/knative.dev/eventing/cmd/webhook@sha256:9ca667c4d9c9c02b1549aee6d3fc13f40e8e54322260525665b029983c373ece;
+docker tag gcr.io/knative-releases/knative.dev/eventing/cmd/webhook@sha256:9ca667c4d9c9c02b1549aee6d3fc13f40e8e54322260525665b029983c373ece linkinghack/knative-eventing-webhook:9ca667c;
+docker push linkinghack/knative-eventing-webhook:9ca667c;
