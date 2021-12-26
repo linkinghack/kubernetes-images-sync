@@ -48,6 +48,19 @@ docker pull gcr.io/knative-nightly/knative.dev/eventing-kafka/cmd/channel/distri
 docker tag gcr.io/knative-nightly/knative.dev/eventing-kafka/cmd/channel/distributed/controller@sha256:2d5fa38022443abffafb2693e397597f0f0700ac5c03e0a5d728122ad819bd29 linkinghack/knative-eventing-kafka-channel-distributed-controller:2d5fa38;
 docker push linkinghack/knative-eventing-kafka-channel-distributed-controller:2d5fa38;
 
+docker pull gcr.io/knative-nightly/knative.dev/eventing-kafka/cmd/channel/consolidated/dispatcher@sha256:88170ba802ec9fd8cbc410545ed9100213d4a164c3f2c6101a7a402b554a160c;
+docker tag gcr.io/knative-nightly/knative.dev/eventing-kafka/cmd/channel/consolidated/dispatcher@sha256:88170ba802ec9fd8cbc410545ed9100213d4a164c3f2c6101a7a402b554a160c linkinghack/knative-eventing-kafka-channel-consolidated-dispatcher:88170ba;
+docker push linkinghack/knative-eventing-kafka-channel-consolidated-dispatcher:88170ba;
+
+docker pull gcr.io/knative-nightly/knative.dev/eventing-kafka/cmd/channel/distributed/receiver@sha256:3a2a126d42ea4ab7fe7a87a69853f1af615fa1dba16fd30226bd4275fb945896;
+docker tag gcr.io/knative-nightly/knative.dev/eventing-kafka/cmd/channel/distributed/receiver@sha256:3a2a126d42ea4ab7fe7a87a69853f1af615fa1dba16fd30226bd4275fb945896 linkinghack/knative-eventing-kafka-channel-distributed-receiver:3a2a126;
+docker push linkinghack/knative-eventing-kafka-channel-distributed-receiver:3a2a126;
+
+docker pull gcr.io/knative-nightly/knative.dev/eventing-kafka/cmd/channel/distributed/dispatcher@sha256:2ef60a5951fab4be52ee228dda214b4e95ce56da2dbff57775c60ba0b4c3b0a0;
+docker tag gcr.io/knative-nightly/knative.dev/eventing-kafka/cmd/channel/distributed/dispatcher@sha256:2ef60a5951fab4be52ee228dda214b4e95ce56da2dbff57775c60ba0b4c3b0a0 linkinghack/knative-eventing-kafka-channel-distributed-dispatcher:2ef60a5;
+docker push linkinghack/knative-eventing-kafka-channel-distributed-dispatcher:2ef60a5;
+
+
 ## Inmemory Channel
 docker pull gcr.io/knative-releases/knative.dev/eventing/cmd/in_memory/channel_dispatcher@sha256:f68e7b2f99b590e60f034d91b771eef02ff9303da749da4aec389f4c8286d903;
 docker tag gcr.io/knative-releases/knative.dev/eventing/cmd/in_memory/channel_dispatcher@sha256:f68e7b2f99b590e60f034d91b771eef02ff9303da749da4aec389f4c8286d903 linkinghack/knative-eventing-inmemory-channel-dispatcher:f68e7b2;
