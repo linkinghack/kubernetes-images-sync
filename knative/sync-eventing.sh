@@ -56,3 +56,13 @@ docker push linkinghack/knative-eventing-inmemory-channel-dispatcher:f68e7b2;
 docker pull gcr.io/knative-releases/knative.dev/eventing/cmd/in_memory/channel_controller@sha256:4fe048c1454e129dda9b32abac4da7bfdc7ca1b53316169e1748873095f5f565;
 docker tag gcr.io/knative-releases/knative.dev/eventing/cmd/in_memory/channel_controller@sha256:4fe048c1454e129dda9b32abac4da7bfdc7ca1b53316169e1748873095f5f565 linkinghack/knative-eventing-inmemory-channel-controller:4fe048c;
 docker push linkinghack/knative-eventing-inmemory-channel-controller:4fe048c;
+
+
+## Kafka Source
+docker pull gcr.io/knative-releases/knative.dev/eventing-kafka/cmd/source/controller@sha256:56905b03a4595d0ea7275e21d2b7c6bccc28b8bc667e78eab233e2f110bf7427;
+docker tag gcr.io/knative-releases/knative.dev/eventing-kafka/cmd/source/controller@sha256:56905b03a4595d0ea7275e21d2b7c6bccc28b8bc667e78eab233e2f110bf7427 linkinghack/knative-eventing-kafka-source-controller:56905b0;
+docker push linkinghack/knative-eventing-kafka-source-controller:56905b0;
+
+docker pull gcr.io/knative-releases/knative.dev/eventing-kafka/cmd/source/receive_adapter@sha256:3d824a0aa50b7437a6a4d57243af0612be7b116ee3d3f9aa3ac207e637a41b4d;
+docker tag gcr.io/knative-releases/knative.dev/eventing-kafka/cmd/source/receive_adapter@sha256:3d824a0aa50b7437a6a4d57243af0612be7b116ee3d3f9aa3ac207e637a41b4d linkinghack/knative-eventing-kafka-source-receive-adapter:3d824a0;
+docker push linkinghack/knative-eventing-kafka-source-receive-adapter:3d824a0;
