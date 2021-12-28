@@ -13,6 +13,9 @@ docker login -u $DOCKERHUB_USER -p $DOCKERHUB_PASSWORD
 # bash kube-prometheus/sync-k8s-prometheus.sh
 
 # sync knative images
-bash knative/sync-eventing.sh
+# bash knative/sync-eventing.sh
 # bash knative/sync-serving.sh
 # bash knative/sync-example.sh
+
+# quay.io
+bash other-tools/sync-quay.io.sh
