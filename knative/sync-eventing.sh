@@ -79,3 +79,14 @@ docker push linkinghack/knative-eventing-kafka-source-controller:56905b0;
 docker pull gcr.io/knative-releases/knative.dev/eventing-kafka/cmd/source/receive_adapter@sha256:3d824a0aa50b7437a6a4d57243af0612be7b116ee3d3f9aa3ac207e637a41b4d;
 docker tag gcr.io/knative-releases/knative.dev/eventing-kafka/cmd/source/receive_adapter@sha256:3d824a0aa50b7437a6a4d57243af0612be7b116ee3d3f9aa3ac207e637a41b4d linkinghack/knative-eventing-kafka-source-receive-adapter:3d824a0;
 docker push linkinghack/knative-eventing-kafka-source-receive-adapter:3d824a0;
+
+## Kafka Sink
+docker pull gcr.io/knative-releases/knative-kafka-broker-receiver:devel;
+docker tag gcr.io/knative-releases/knative-kafka-broker-receiver:devel linkinghack/knative-kafka-broker-receiver:devel;
+docker push linkinghack/knative-kafka-broker-receiver:devel;
+
+## Sugar
+### controller
+docker pull gcr.io/knative-releases/knative.dev/eventing/cmd/sugar_controller@sha256:bab0addca1f70dcc093a498ce551a177215ff053043eb0cf9334a095d512837d;
+docker tag gcr.io/knative-releases/knative.dev/eventing/cmd/sugar_controller@sha256:bab0addca1f70dcc093a498ce551a177215ff053043eb0cf9334a095d512837d linkinghack/knative-eventing-sugar-controller:bab0add;
+docker push linkinghack/knative-eventing-sugar-controller:bab0add;
