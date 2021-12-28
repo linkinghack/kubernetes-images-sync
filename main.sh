@@ -18,4 +18,4 @@ docker login -u $DOCKERHUB_USER -p $DOCKERHUB_PASSWORD
 # bash knative/sync-example.sh
 
 # quay.io
-bash other-tools/sync-quay.io.sh
+bash other-tools/cilium.sh
