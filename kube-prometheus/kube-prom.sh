@@ -7,3 +7,8 @@ docker push linkinghack/kube-state-metrics:v2.3.0;
 docker pull k8s.gcr.io/prometheus-adapter/prometheus-adapter:v0.9.1;
 docker tag k8s.gcr.io/prometheus-adapter/prometheus-adapter:v0.9.1 linkinghack/prometheus-adapter:v0.9.1;
 docker push linkinghack/prometheus-adapter:v0.9.1;
+
+docker pull quay.io/prometheus-operator/prometheus-config-reloader:v0.53.1;
+docker tag quay.io/prometheus-operator/prometheus-config-reloader:v0.53.1 linkinghack/prometheus-config-reloader:v0.53.1;
+docker push linkinghack/prometheus-config-reloader:v0.53.1;
+
