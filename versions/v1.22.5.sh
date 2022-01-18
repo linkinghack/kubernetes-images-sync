@@ -1,0 +1,9 @@
+images=(
+    kube-apiserver:v1.22.5
+    kube-controller-manager:v1.22.5
+    kube-scheduler:v1.22.5
+    kube-proxy:v1.22.5
+    pause:3.6
+    etcd:3.5.1-0
+    coredns/coredns:v1.8.6
+)
