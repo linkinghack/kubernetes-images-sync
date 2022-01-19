@@ -6,7 +6,7 @@ source latest.sh
 docker login -u $DOCKERHUB_USER -p $DOCKERHUB_PASSWORD
 
 ## sync k8s basic components images
-bash sync-k8s-basic.sh
+bash sync-k8s.sh
 
 
 ## sync prometheus images
