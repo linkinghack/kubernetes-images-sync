@@ -5,5 +5,6 @@ images=(
     kube-proxy:v1.23.1
     pause:3.6
     etcd:3.5.1-0
-    coredns/coredns:v1.8.6
 )
+
+export COREDNS_IMG=coredns:v1.8.6

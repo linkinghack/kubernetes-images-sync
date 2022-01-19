@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# Provide the 'images' array containing image names
-source latest.sh
 
 docker login -u $DOCKERHUB_USER -p $DOCKERHUB_PASSWORD
 
